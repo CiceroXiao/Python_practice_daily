@@ -31,4 +31,6 @@ try:
     if -26 < the_key < 26:
         caesar_cipher()
 except ValueError:
-    print("Please input right value.")
+    print("ValueError. Please input right value.")
+except TypeError:
+    print("TypeError. Please input right value.")
