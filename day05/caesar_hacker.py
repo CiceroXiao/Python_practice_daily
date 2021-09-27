@@ -5,11 +5,9 @@ the_message = input("Enter the message to encrypt.\n> ").upper()
 
 def caesar_cipher(the_key):
     the_message_processed = []
-    code_type_model = ""
     for item in list(the_message):
         if item in all_letters:
             item_after_index = all_letters.index(item) - the_key
-            code_type_model += "encrypte"
             the_message_processed.append(all_letters[item_after_index])
         else:
             the_message_processed.append(item)
